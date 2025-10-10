@@ -1,0 +1,210 @@
+.about {
+    padding: 100px 0;
+    font-family: sans-serif;
+    background-color: #0D1117;
+    color: #fff;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+
+.sobre-mim {
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(0, 228, 155);
+}
+
+.abaixo-sobre-mim {
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: rgb(206, 206, 206);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 50px 25px;
+    width: calc(26% - 20px);
+    border-radius: 6px;
+    background: #161B22;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #eeeeee;
+}
+
+.box2 {
+    transition: all 0.3s ease;
+}
+
+.card:hover .box2 {
+    transform: scale(1.07);
+}
+
+.box2 i {
+    font-size: 50px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.card:hover .box2 i {
+    color: #000000;
+}
+
+.card:hover .box2 h3 {
+    color: #000000;
+}
+
+.card:hover .box2 {
+    color: #000000;
+}
+
+.box2 h3 {
+    font-size: 25px;
+    padding: 10px 0 7px;
+}
+
+.box2:hover {
+    color: #000000;
+}
+
+.pipehub {
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+}
+
+.pipehub__information:hover {
+    color: #00e49b;
+    transition: all 0.3s ease;
+}
+
+.pipehub__information {
+    color: #fff;
+    text-decoration: none;
+}
+
+.paragraph__content {
+    color: #fff;
+    text-align: justify;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.meu_localizador {
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+}
+
+.meu__localizador__information:hover {
+    color: #6F6EF8;
+    transition: all 0.3s ease;
+}
+
+.meu__localizador__information {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cresol_credi {
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+}
+
+.cresol_credi__information:hover {
+    color: #EC6D27;
+    transition: all 0.3s ease;
+}
+
+.cresol_credi__information {
+    color: #fff;
+    text-decoration: none;
+}
+
+.engerisco__information:hover {
+    color: #FB923C;
+    transition: all 0.3s ease;
+}
+
+.engerisco__information {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btg {
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+}
+
+.btg__information:hover {
+    color: #132F5E;
+    transition: all 0.3s ease;
+}
+
+.btg__information {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tcc__information:hover {
+    color: #11c770;
+    transition: all 0.3s ease;
+}
+
+.tcc__information {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1190px) {
+    .max-width {
+        padding: 0 25px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .card {
+        width: 100%
+    }
+}
