@@ -85,103 +85,6 @@
     color: #000000;
 }
 
-.pipehub {
-    margin-top: 2rem;
-    text-align: center;
-    position: relative;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding-bottom: 20px;
-}
-
-.pipehub__information:hover {
-    color: #00e49b;
-    transition: all 0.3s ease;
-}
-
-.pipehub__information {
-    color: #fff;
-    text-decoration: none;
-}
-
-.paragraph__content {
-    color: #fff;
-    text-align: justify;
-    display: flex;
-    font-family: sans-serif;
-}
-
-.meu_localizador {
-    margin-top: 2rem;
-    text-align: center;
-    position: relative;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding-bottom: 20px;
-}
-
-.meu__localizador__information:hover {
-    color: #6F6EF8;
-    transition: all 0.3s ease;
-}
-
-.meu__localizador__information {
-    color: #fff;
-    text-decoration: none;
-}
-
-.cresol_credi {
-    margin-top: 2rem;
-    text-align: center;
-    position: relative;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding-bottom: 20px;
-}
-
-.cresol_credi__information:hover {
-    color: #EC6D27;
-    transition: all 0.3s ease;
-}
-
-.cresol_credi__information {
-    color: #fff;
-    text-decoration: none;
-}
-
-.engerisco__information:hover {
-    color: #FB923C;
-    transition: all 0.3s ease;
-}
-
-.engerisco__information {
-    color: #fff;
-    text-decoration: none;
-}
-
-.btg {
-    margin-top: 2rem;
-    text-align: center;
-    position: relative;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding-bottom: 20px;
-}
-
-.btg__information:hover {
-    color: #132F5E;
-    transition: all 0.3s ease;
-}
-
-.btg__information {
-    color: #fff;
-    text-decoration: none;
-}
-
 .tcc__information:hover {
     color: #11c770;
     transition: all 0.3s ease;
@@ -206,5 +109,125 @@
 @media screen and (max-width: 1190px) {
     .card {
         width: 100%
+    }
+}
+
+.projects {
+    background-color: #0D1117;
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.projects .max-width {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 228, 155);
+    padding-bottom: 10px;
+}
+
+.section-subtitle {
+    font-weight: normal;
+    text-align: center;
+    color: rgb(206, 206, 206);
+    margin-bottom: 60px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.project-card {
+    background: #161B22;
+    border-radius: 6px;
+    padding: 50px 25px;
+    width: calc(26% - 20px);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #eeeeee;
+    transform: scale(1.07);
+}
+
+.project-card i {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover i {
+    color: #000;
+}
+
+.project-card h3 {
+    font-size: 25px;
+    padding: 10px 0 7px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover h3 {
+    color: #000;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover p {
+    color: #000;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.project-link.disabled {
+    background: gray;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 1190px) {
+    .project-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: 100%;
     }
 }
