@@ -151,11 +151,13 @@
     background: #161B22;
     border-radius: 6px;
     padding: 50px 25px;
-    width: calc(26% - 20px);
+    width: calc(25% - 30px);
     text-align: center;
     user-select: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover {
