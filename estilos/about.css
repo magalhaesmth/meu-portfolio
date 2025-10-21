@@ -296,3 +296,9 @@
     background-color: #00b67a;
     transform: scale(1.05);
 }
+
+.button-group button {
+    min-width: 250px;
+    max-width: 300px;
+    width: 100%;
+}

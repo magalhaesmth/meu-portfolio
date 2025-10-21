@@ -1,7 +1,37 @@
-function sendMessage() {
-    window.open("https://wa.me/5544998033233?text=Olá%Matheus,%20vi%20seu%20Portfólio%20e%20gostaria%20de%20marcar%20uma%20conversa%20com%20você!", '_blank');
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const nomeInput = document.getElementById("nome");
+    const emailInput = document.getElementById("email");
+    const mensagemInput = document.getElementById("mensagem");
 
-function mailTo() {
-    window.open('mailto:matheusurbano2002@hotmail.com?subject=Bate-Papo&body=Olá Matheus, vi seu Portfólio e gostaria de marcar uma conversa com você!');
-}
+    document.getElementById("whatsapp-button").addEventListener("click", function () {
+        const nome = nomeInput.value.trim();
+        const email = emailInput.value.trim();
+        const mensagem = mensagemInput.value.trim();
+
+        if (!nome || !email || !mensagem) {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        const numero = "5544998033233";
+        const texto = `Olá! Meu nome é ${nome} (${email}).%0A%0A${mensagem}`;
+        const link = `https://wa.me/${numero}?text=${texto}`;
+        window.open(link, "_blank");
+    });
+
+    document.getElementById("email-button").addEventListener("click", function () {
+        const nome = nomeInput.value.trim();
+        const email = emailInput.value.trim();
+        const mensagem = mensagemInput.value.trim();
+
+        if (!nome || !email || !mensagem) {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        const assunto = encodeURIComponent("Nova mensagem do seu site");
+        const corpo = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`);
+        const link = `mailto:matheusurbano2002@hotmail.com?subject=${assunto}&body=${corpo}`;
+        window.location.href = link;
+    });
+});
